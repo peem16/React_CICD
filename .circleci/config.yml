@@ -21,6 +21,16 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       # run tests!
+      - run:
+          name: Building
+          command: |
+              if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+                echo ${CIRCLE_BRANCH}
+              elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+                echo ${CIRCLE_BRANCH}
+              else
+                echo ${CIRCLE_BRANCH}
+              fi
       - run: yarn test
       - run: sudo apt-get update && sudo apt-get install -y python-dev
       - run: sudo curl -O https://bootstrap.pypa.io/get-pip.py
