@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "test": "jest --no-cache",
-    "deploy": "yarn build && aws s3 sync dist/ s3://reactcicd--delete"
+    "deploy": "yarn build && aws s3 sync dist/ s3://reactcicd --delete"
   },
   "keywords": [],
   "author": "wattanai <peem16@hotmail.com> (example.com)",
