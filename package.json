@@ -40,7 +40,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "crypto": "^1.0.1",
     "dotenv": "^7.0.0",
     "dotenv-webpack": "^1.7.0",
